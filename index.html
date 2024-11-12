@@ -4,24 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iChat Application</title>
-    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
-    <script defer src = "js/client.js"></script>
+
+    <!-- Use the CDN version for socket.io.js -->
+    <script defer src="https://cdn.socket.io/4.6.1/socket.io.min.js"></script> 
+
+    <!-- Your custom JavaScript file -->
+    <script defer src="js/client.js"></script>
+
+    <!-- External CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <nav>
-        <img class="logo" src="img 1.png" alt="">
+        <img class="logo" src="img 1.png" alt="Logo">
         <h1>Welcome to iChat Application</h1>
-       
     </nav>
+
+    <!-- Chat message container -->
     <div class="container"></div>
 
+    <!-- Message input form -->
     <div class="send">
         <form action="#" id="send-container">
-            <input type="text" name="messageInp" id="messageInp">
+            <input type="text" id="messageInp" name="messageInp" placeholder="Type a message">
             <button class="btn" type="submit">Send</button>
         </form>
-
     </div>
 </body>
 </html>
